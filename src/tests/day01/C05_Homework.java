@@ -54,7 +54,7 @@ public class C05_Homework {
 
         driver.navigate().back();
         driver.navigate().refresh();
-        driver.manage().window().fullscreen();
+        driver.manage().window().maximize();
         Thread.sleep(2000);
         driver.close();
 
