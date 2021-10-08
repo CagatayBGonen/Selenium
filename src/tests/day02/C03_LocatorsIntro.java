@@ -53,7 +53,16 @@ public class C03_LocatorsIntro {
            System.out.println("Sign Out verify: PASS");
        } else System.out.println("Sign Out verify: FAILED");
         List<WebElement> linkNumber = driver.findElements(By.tagName("a"));
-        System.out.println(linkNumber.size());
+        System.out.println("Number of Links in the page : "+linkNumber.size());
+
+        //linklerin yazilarini yazdiralim
+        // elimizdeki listedeki tum webelementlerin yazilarini for loop ve for each ile yazdirabiliriz.
+        // tum elementler yazdiralacaksa bu durumda for each loop daha kullanişli olacaktir.
+        for(WebElement each: linkNumber){
+            System.out.println(each.getText());
+        }
+
+
         driver.close();
 
 
