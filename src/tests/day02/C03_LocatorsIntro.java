@@ -58,10 +58,11 @@ public class C03_LocatorsIntro {
         //linklerin yazilarini yazdiralim
         // elimizdeki listedeki tum webelementlerin yazilarini for loop ve for each ile yazdirabiliriz.
         // tum elementler yazdiralacaksa bu durumda for each loop daha kullanişli olacaktir.
+        int count = 1;
         for(WebElement each: linkNumber){
-            System.out.println(each.getText());
+            System.out.println(count+"-"+each.getText());
+            count++;
         }
-
 
         driver.close();
 
